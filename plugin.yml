@@ -1,0 +1,25 @@
+# My First plugin
+name: TPoff
+main: SamyR0\TPoff\Main
+version: 0.0.1
+api: [1.0.0,2.0.0, 3.0.0-ALPHA1, 3.0.0-ALPHA2, 3.0.0-ALPHA3, 3.0.0-ALPHA4, 3.0.0-ALPHA5]
+load: POSTWORLD
+author: SamyR0
+website: https://github.com/SamyR0
+commands:
+ tpoff:
+  description: "Toggles the tp mode"
+  usage: "/tpoff"
+  permission: tpoff.toggle
+permissions:
+  tpoff:
+    description: "Allows access to TPoff"
+    default: op
+    children:
+      tpoff.toggle:
+        description: "Allows TPoff"
+        default: false
+        children:
+          tpoff.toggle.self:
+            description: "Toggle for a player"
+            default: false
