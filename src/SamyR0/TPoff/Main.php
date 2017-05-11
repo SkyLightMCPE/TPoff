@@ -30,7 +30,7 @@ class Main extends PluginBase implements Listener {
             if (isset($this->enabled[strtolower($issuer->getName())])) {
                 $issuer->sendMessage(TextFormat::GREEN . "TPoff enabled!");
             } else {
-                $issuer->sendMessage(TextFormat::GRREN . "TPoff disabled!");
+                $issuer->sendMessage(TextFormat::GREEN . "TPoff disabled!");
             }
             return true;
         } else {
