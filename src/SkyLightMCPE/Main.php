@@ -1,6 +1,6 @@
 <?php
 
-namespace SkyLightMCPE\TPoff;
+namespace SkyLightMCPE;
 
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
